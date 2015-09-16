@@ -15,8 +15,8 @@
     - [Create case](#create-case)
     - [Update case](#update-case)
     - [Create document](#create-document)
-    - [UpdateDocument](#updatedocument)
-    - [GetDocuments](#getdocuments)
+    - [Update document](#update-document)
+    - [Get documents](#get-documents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
