@@ -10,7 +10,7 @@ Node module for Public 360
 var p360 = require('node-p360')
 var config = require('./config')
 var args = { 'parameter': { 'Name': 'Geir' } }
-var clientMethod = 'GetContactPerson'
+var clientMethod = 'GetContactPersons'
 
 var options = {
   'p360': config.p360,
