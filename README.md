@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [node-p360](#node-p360)
+  - [SIF documentation](#sif-documentation)
+  - [Usage](#usage)
+  - [Examples](#examples)
+    - [Search private persons](#search-private-persons)
+    - [Search contact persons](#search-contact-persons)
+    - [Create contact person](#create-contact-person)
+    - [Create case](#create-case)
+    - [Update case](#update-case)
+    - [Create document](#create-document)
+    - [UpdateDocument](#updatedocument)
+    - [GetDocuments](#getdocuments)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [![Build Status](https://travis-ci.org/telemark/node-p360.svg?branch=master)](https://travis-ci.org/telemark/node-p360)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
