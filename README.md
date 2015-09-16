@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/telemark/node-p360.svg?branch=master)](https://travis-ci.org/zrrrzzt/node-p360)
+[![Build Status](https://travis-ci.org/telemark/node-p360.svg?branch=master)](https://travis-ci.org/telemark/node-p360)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # node-p360
