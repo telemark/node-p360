@@ -4,6 +4,12 @@
 # node-p360
 Node module for Public 360
 
+## SIF documentation
+
+SI Integration Framework (SIF) is public 360s SOAP-webservice.
+
+For a full list of calls and callbacks see the documentation  [here](https://github.com/telemark/skoleskyss-arbeid/blob/master/biztalk/GenericWebServiceLayer.pdf)
+
 ## Usage
 
 ```javascript
@@ -26,15 +32,10 @@ p360(options, function (error, data) {
   }
 })
 ```
-# SIF documentation
 
-SI Integration Framework (SIF) is public 360s SOAP-webservice.
+## Examples
 
-For a full list of calls and callbacks see the documentation  [here](https://github.com/telemark/skoleskyss-arbeid/blob/master/biztalk/GenericWebServiceLayer.pdf)
-
-# Examples
-
-## Search for private persons
+### Search private persons
 ```javascript
 var clientMethod = 'GetPrivatePersons'
 var args = {
@@ -46,7 +47,36 @@ var args = {
 }
 ```
 
-## Search for contact persons
+**Result:**
+```javascript
+{
+    "GetPrivatePersonsResult": {
+        "Successful": true,
+        "PrivatePersons": {
+            "PrivatePersonBase": [
+                {
+                    "Email": "hallgeir.hall@t-fk.no",
+                    "FirstName": "Hallgeir",
+                    "LastName": "Hall",
+                    "MobilePhone": "+47 90 00 00 00",
+                    "PersonalIdNumber": "",
+                    "PrivateAddress": {
+                        "Area": "TELEMARK",
+                        "Country": "NOR",
+                        "County": "SELJORD",
+                        "State": "",
+                        "StreetAddress": "Hygdedalen 42",
+                        "ZipCode": "3840",
+                        "ZipPlace": "SELJORD"
+                      }
+                }
+            ]
+        }
+    }
+}
+```
+
+### Search contact persons
 ```javascript
 var clientMethod = 'GetContactPersons'
 var args = {
@@ -58,7 +88,52 @@ var args = {
 }
 ```
 
-## Create contact person
+**Result:**
+```javascript
+{
+    "GetContactPersonsResult": {
+        "Successful": true,
+        "ContactPersons": {
+            "ContactPersonBase": [
+                {
+                    "Email": "Geir.Gasodden@t-fk.no",
+                    "ExternalId": "",
+                    "FirstName": "Geir",
+                    "LastName": "Gåsodden",
+                    "MobilePhone": "+47 95 55 27 59",
+                    "PrivateAddress": {
+                        "Area": "",
+                        "Country": "NOR",
+                        "County": "",
+                        "State": "",
+                        "StreetAddress": "",
+                        "ZipCode": "",
+                        "ZipPlace": ""
+                    }
+                },
+                {
+                    "Email": "geir.grastein@t-fk.no",
+                    "ExternalId": "",
+                    "FirstName": "Geir",
+                    "LastName": "Gråstein",
+                    "MobilePhone": "+47 93 00 00 00",
+                    "PrivateAddress": {
+                        "Area": "",
+                        "Country": "NOR",
+                        "County": "",
+                        "State": "",
+                        "StreetAddress": "",
+                        "ZipCode": "",
+                        "ZipPlace": ""
+                    }
+                }
+            ]
+        }
+    }
+}
+```
+
+### Create contact person
 ```javascript
 var clientMethod = 'SynchronizeContactPerson'
 var args = {
@@ -78,7 +153,9 @@ var args = {
 }
 ```
 
-## Create case
+**Result:**
+
+### Create case
 ```javascript
 var clientMethod = 'CreateCase'
 var args = {
@@ -116,7 +193,9 @@ var args = {
 }
 ```
 
-## Updates case
+**Result:**
+
+### Update case
 ```javascript
 var clientMethod = 'UpdateCase'
 var args = {
@@ -127,7 +206,9 @@ var args = {
 }
 ```
 
-## Create document
+**Result:**
+
+### Create document
 ```javascript
 var clientMethod = 'CreateDocument'
 var args = {
@@ -160,7 +241,12 @@ var args = {
   }
 }
 ```
+**Result:**
 
-## UpdateDocument
+### UpdateDocument
 
-## GetDocuments
+**Result:**
+
+### GetDocuments
+
+**Result:**
