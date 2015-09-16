@@ -262,10 +262,10 @@ var args = {
 ```
 **Result:**
 
-### UpdateDocument
+### Update document
 
 **Result:**
 
-### GetDocuments
+### Get documents
 
 **Result:**
