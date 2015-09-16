@@ -12,6 +12,7 @@
     - [Search private persons](#search-private-persons)
     - [Search contact persons](#search-contact-persons)
     - [Create contact person](#create-contact-person)
+    - [Search cases](#search-cases)
     - [Create case](#create-case)
     - [Update case](#update-case)
     - [Create document](#create-document)
@@ -168,6 +169,21 @@ var args = {
       'ZipCode': '1337',
       'ZipPlace': 'Telemark'
     }
+  }
+}
+```
+
+**Result:**
+
+### Search cases
+```javascript
+var clientMethod = 'GetCases'
+var args = {
+  'parameter': {
+    'CaseNumber': '',
+    'Title': 'Test',
+    'ContactReferenceNumber': '',
+    'ArchiveCode': ''
   }
 }
 ```
