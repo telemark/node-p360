@@ -10,7 +10,7 @@ var config = {
        namespaces: ['targetNamespace', 'typedNamespace'],
        override: true
     }
-    }
+  }
 }
 
 module.exports = config
