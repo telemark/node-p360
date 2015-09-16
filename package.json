@@ -1,0 +1,49 @@
+{
+  "name": "node-p360",
+  "version": "1.0.0",
+  "description": "Communicates with p360 SIF",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@t-fk.no",
+    "url": "https://github.com/maccyber"
+  },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "setup": "npm install && node setup.js",
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "keywords": [
+    "Telemark fylkeskommune",
+    "tfk",
+    "360",
+    "public 360",
+    "SIF"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/node-p360.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/node-p360/issues"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "mocha": "^2.2.5",
+    "valid-url": "^1.0.9"
+  },
+  "dependencies": {
+    "soap": "^0.9.3"
+  }
+}
