@@ -9,15 +9,18 @@
   - [SIF documentation](#sif-documentation)
   - [Usage](#usage)
   - [Examples](#examples)
-    - [Search private persons](#search-private-persons)
-    - [Search contact persons](#search-contact-persons)
-    - [Create contact person](#create-contact-person)
-    - [Search cases](#search-cases)
-    - [Create case](#create-case)
-    - [Update case](#update-case)
-    - [Create document](#create-document)
-    - [Update document](#update-document)
-    - [Get documents](#get-documents)
+    - [Persons](#persons)
+      - [Search private persons](#search-private-persons)
+      - [Search contact persons](#search-contact-persons)
+      - [Create contact person](#create-contact-person)
+    - [Cases](#cases)
+      - [Search cases](#search-cases)
+      - [Create case](#create-case)
+      - [Update case](#update-case)
+    - [Documents](#documents)
+      - [Create document](#create-document)
+      - [Update document](#update-document)
+      - [Get documents](#get-documents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -55,7 +58,9 @@ p360(options, function (error, data) {
 
 ## Examples
 
-### Search private persons
+### Persons
+
+#### Search private persons
 ```javascript
 var clientMethod = 'GetPrivatePersons'
 var args = {
@@ -96,7 +101,7 @@ var args = {
 }
 ```
 
-### Search contact persons
+#### Search contact persons
 ```javascript
 var clientMethod = 'GetContactPersons'
 var args = {
@@ -153,7 +158,7 @@ var args = {
 }
 ```
 
-### Create contact person
+#### Create contact person
 ```javascript
 var clientMethod = 'SynchronizeContactPerson'
 var args = {
@@ -175,7 +180,9 @@ var args = {
 
 **Result:**
 
-### Search cases
+### Cases
+
+#### Search cases
 ```javascript
 var clientMethod = 'GetCases'
 var args = {
@@ -190,7 +197,7 @@ var args = {
 
 **Result:**
 
-### Create case
+#### Create case
 ```javascript
 var clientMethod = 'CreateCase'
 var args = {
@@ -230,7 +237,7 @@ var args = {
 
 **Result:**
 
-### Update case
+#### Update case
 ```javascript
 var clientMethod = 'UpdateCase'
 var args = {
@@ -243,7 +250,9 @@ var args = {
 
 **Result:**
 
-### Create document
+### Documents
+
+#### Create document
 ```javascript
 var clientMethod = 'CreateDocument'
 var args = {
@@ -278,10 +287,10 @@ var args = {
 ```
 **Result:**
 
-### Update document
+#### Update document
 
 **Result:**
 
-### Get documents
+#### Get documents
 
 **Result:**
