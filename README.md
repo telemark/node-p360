@@ -26,10 +26,11 @@ p360(options, function (error, data) {
   }
 })
 ```
-# SIF (SI Integration Framework) documentation
+# SIF documentation
 
-For a full list of calls and callbacks see:
-https://github.com/telemark/skoleskyss-arbeid/blob/master/biztalk/GenericWebServiceLayer.pdf
+SI Integration Framework (SIF) is public 360s SOAP-webservice.
+
+For a full list of calls and callbacks see the documentation  [here](https://github.com/telemark/skoleskyss-arbeid/blob/master/biztalk/GenericWebServiceLayer.pdf)
 
 # Examples
 
