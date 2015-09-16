@@ -26,3 +26,140 @@ p360(options, function (error, data) {
   }
 })
 ```
+# SIF (SI Integration Framework) documentation
+
+For a full list of calls and callbacks see:
+https://github.com/telemark/skoleskyss-arbeid/blob/master/biztalk/GenericWebServiceLayer.pdf
+
+# Examples
+
+## Search for private persons
+```javascript
+var clientMethod = 'GetPrivatePersons'
+var args = {
+  'parameter': {
+    'Name': 'Geir',
+    'PersonalIdNumber': '',
+    'Recno': ''
+  }
+}
+```
+
+## Search for contact persons
+```javascript
+var clientMethod = 'GetContactPersons'
+var args = {
+  'parameter': {
+    'Name': 'Geir',
+    'PersonalIdNumber': '',
+    'Recno': ''
+  }
+}
+```
+
+## Create contact person
+```javascript
+var clientMethod = 'SynchronizeContactPerson'
+var args = {
+  'parameter': {
+    'FirstName': 'Halvard',
+    'MiddleName': 'Ivar',
+    'LastName': 'Fotfjes',
+    'PersonalIdNumber': '14059733381',
+    'Email': 'halvard.fotfjes@t-fk.no',
+    'PrivateAddress': {
+      'Country': 'NOR',
+      'StreetAddress': 'Lovestreet 42',
+      'ZipCode': '1337',
+      'ZipPlace': 'Telemark'
+    }
+  }
+}
+```
+
+## Create case
+```javascript
+var clientMethod = 'CreateCase'
+var args = {
+  'parameter': {
+    'Title': 'Sakstittel',
+    'UnofficialTitle': 'Uoffisiell sakstittel',
+    'Status': 'B', // Under behandling
+    'SubArchive': '200052', // Codetable: Noark subarchive
+    'AccessCode': '13', // Codetable: Accesscode
+    'AccessGroup': 'Gruppenavn', // Tilgangsgruppe navn
+    'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
+    'ArchiveCodes': {
+      0: {
+        'Sort': '1',
+        'ArchiveType': 'FAGKODE PRINSIPP', // Codetable: Noark classification
+        'ArchiveCode': 'N06' // Codetable: Noark classification code
+      },
+      1: {
+        'Sort': '2',
+        'ArchiveType': 'Fnr', // Codetable: Noark classification
+        'ArchiveCode': '14059733381',
+        'IsManualText': 'False'
+      }
+    },
+    'Keywords': 'Stikkord',
+    'Contacts': {
+      0: {
+        'ReferenceNumber': '14059733381',
+        'Role': '9', // Codetable: Contact - Case Role
+      }
+    },
+    'ResponsiblePersonIdNumber': '',
+    'ResponsibleEnterpriseRecno': '213419' // Recnr ansvarlig virksomhet
+  }
+}
+```
+
+## Updates case
+```javascript
+var clientMethod = 'UpdateCase'
+var args = {
+  'parameter': {
+    'CaseNumber': '15/13742',
+    'Title': 'Ny sakstittel'
+  }
+}
+```
+
+## Create document
+```javascript
+var clientMethod = 'CreateDocument'
+var args = {
+  'parameter': {
+    'Title': 'Dokument tittel',
+    'Archive': '2', // Codetable: Document archive
+    'Status': '6', // Codetable: Document status
+    'Category': '110', // Codetable: Document category
+    'ResponsiblePersonRecno': '', // Recnr ansvarlig person
+    'ResponsibleEnterpriseRecno': '213419', // Recnr ansvarlig virksomhet
+    'Contacts': {
+      0: {
+        'ReferenceNumber': '14059733381', // Personnummer
+        'Role': '5' // Mottaker
+      }
+    },
+    'SendersReference': '',
+    'AccessCode': '13', // Codetable: Accesscode
+    'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
+    'AccessGroup': 'Gruppenavn', // Codetable: Tilgangsgruppe navn
+    'Files': {
+      0: {
+        'Title': 'Fil tittel',
+        'Format': 'PDF', // Codetable: File format
+        'Base64Data': data, // Must be base64 encoded
+        'VersionFormat': 'A', // Codetable: File status
+        'Category': '1' // Codetable: File category
+      }
+    }
+  }
+}
+```
+
+## UpdateDocument
+
+## GetDocuments
