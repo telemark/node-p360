@@ -21,6 +21,7 @@
   },
   "scripts": {
     "setup": "npm install && node setup.js",
+    "doctoc": "doctoc README.md --github",
     "test": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.4",
+    "doctoc": "^0.15.0",
     "is-fn": "^1.0.0",
     "standard": "^5.2.2",
     "tap": "^1.4.1"
