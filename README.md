@@ -6,6 +6,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [node-p360](#node-p360)
+  - [Installation](#installation)
+    - [From npm](#from-npm)
+    - [From GitHub](#from-github)
   - [SIF documentation](#sif-documentation)
   - [Usage](#usage)
   - [Examples](#examples)
@@ -21,11 +24,32 @@
       - [Create document](#create-document)
       - [Update document](#update-document)
       - [Get documents](#get-documents)
+  - [Disclaimer](#disclaimer)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # node-p360
-Node module for Public 360
+Node module for Public 360 from [Software Innovation](http://www.software-innovation.com/)
+
+## Installation
+
+### From npm
+
+```sh
+$ npm install node-p360 --save
+```
+
+### From GitHub
+
+```sh
+$ git clone git@github.com:telemark/node-p360.git
+```
+
+Then cd into directory and run the setup
+
+```sh
+$ npm run setup
+```
 
 ## SIF documentation
 
@@ -294,3 +318,7 @@ var args = {
 #### Get documents
 
 **Result:**
+
+## Disclaimer
+
+This is not an official module from Software Innovation
