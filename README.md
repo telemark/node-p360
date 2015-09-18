@@ -16,6 +16,7 @@
       - [Search private persons](#search-private-persons)
       - [Search contact persons](#search-contact-persons)
       - [Create contact person](#create-contact-person)
+      - [Create private person](#create-private-person)
     - [Cases](#cases)
       - [Search cases](#search-cases)
       - [Create case](#create-case)
