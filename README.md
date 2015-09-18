@@ -184,13 +184,12 @@ var args = {
 
 #### Create contact person
 ```javascript
-var clientMethod = 'SynchronizeContactPerson'
 var args = {
   'parameter': {
+    'Enterprise': '1337', // Orgnr of company/department
+    'ExternalId': '26118645144', // Personnummer
     'FirstName': 'Halvard',
-    'MiddleName': 'Ivar',
     'LastName': 'Fotfjes',
-    'PersonalIdNumber': '14059733381',
     'Email': 'halvard.fotfjes@t-fk.no',
     'PrivateAddress': {
       'Country': 'NOR',
@@ -203,6 +202,42 @@ var args = {
 ```
 
 **Result:**
+```javascript
+{
+    "SynchronizeContactPersonResult": {
+        "Successful": true,
+        "Recno": 209464
+    }
+}
+```
+
+#### Create private person
+```javascript
+var clientMethod = 'SynchronizePrivatePerson'
+var args = {
+    'FirstName': 'Halvard',
+    'LastName': 'Fotfjes',
+    'PersonalIdNumber': '14059833392',
+    'Email': 'halvard.fotfjes@t-fk.no',
+    'PrivateAddress': {
+      'Country': 'NOR',
+      'StreetAddress': 'Lovestreet 42',
+      'ZipCode': '1337',
+      'ZipPlace': 'Telemark'
+    }
+  }
+}
+```
+
+**Result:**
+```javascript
+{
+    "SynchronizePrivatePersonResult": {
+        "Successful": true,
+        "Recno": 209465
+    }
+}
+```
 
 ### Cases
 
