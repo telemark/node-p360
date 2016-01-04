@@ -222,6 +222,7 @@ var args = {
 var clientService = 'contacts'
 var clientMethod = 'SynchronizePrivatePerson'
 var args = {
+  'parameter': {
     'FirstName': 'Halvard',
     'LastName': 'Fotfjes',
     'PersonalIdNumber': '14059833392',
