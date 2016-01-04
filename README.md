@@ -132,6 +132,7 @@ var args = {
 
 #### Search contact persons
 ```javascript
+var clientService = 'contacts'
 var clientMethod = 'GetContactPersons'
 var args = {
   'parameter': {
@@ -221,6 +222,7 @@ var args = {
 var clientService = 'contacts'
 var clientMethod = 'SynchronizePrivatePerson'
 var args = {
+  'parameter': {
     'FirstName': 'Halvard',
     'LastName': 'Fotfjes',
     'PersonalIdNumber': '14059833392',
@@ -276,26 +278,26 @@ var args = {
     'AccessCode': '13', // Codetable: Accesscode
     'AccessGroup': 'Gruppenavn', // Tilgangsgruppe navn
     'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
-    'ArchiveCodes': {
-      0: {
+    'ArchiveCodes': [
+      {
         'Sort': '1',
         'ArchiveType': 'FAGKODE PRINSIPP', // Codetable: Noark classification
         'ArchiveCode': 'N06' // Codetable: Noark classification code
       },
-      1: {
+      {
         'Sort': '2',
         'ArchiveType': 'Fnr', // Codetable: Noark classification
         'ArchiveCode': '14059733381',
         'IsManualText': 'False'
       }
-    },
+    ],
     'Keywords': 'Stikkord',
-    'Contacts': {
-      0: {
+    'Contacts': [
+      {
         'ReferenceNumber': '14059733381',
         'Role': '9', // Codetable: Contact - Case Role
       }
-    },
+    ],
     'ResponsiblePersonIdNumber': '',
     'ResponsibleEnterpriseRecno': '213419' // Recnr ansvarlig virksomhet
   }
