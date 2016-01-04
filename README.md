@@ -63,11 +63,14 @@ For a full list of calls and callbacks see the documentation  [here](https://git
 ```javascript
 var p360 = require('node-p360')
 var config = require('./config')
-var args = { 'parameter': { 'Name': 'Geir' } }
+
+var clientService = 'contacts'
 var clientMethod = 'GetContactPersons'
+var args = { 'parameter': { 'Name': 'Geir' } }
 
 var options = {
   'p360': config.p360,
+  'clientService': clientService,
   'clientMethod': clientMethod,
   'args': args
 }
@@ -87,6 +90,7 @@ p360(options, function (error, data) {
 
 #### Search private persons
 ```javascript
+var clientService = 'contacts'
 var clientMethod = 'GetPrivatePersons'
 var args = {
   'parameter': {
@@ -214,6 +218,7 @@ var args = {
 
 #### Create private person
 ```javascript
+var clientService = 'contacts'
 var clientMethod = 'SynchronizePrivatePerson'
 var args = {
     'FirstName': 'Halvard',
@@ -244,6 +249,7 @@ var args = {
 
 #### Search cases
 ```javascript
+var clientService = 'cases'
 var clientMethod = 'GetCases'
 var args = {
   'parameter': {
@@ -259,6 +265,7 @@ var args = {
 
 #### Create case
 ```javascript
+var clientService = 'cases'
 var clientMethod = 'CreateCase'
 var args = {
   'parameter': {
@@ -299,6 +306,7 @@ var args = {
 
 #### Update case
 ```javascript
+var clientService = 'cases'
 var clientMethod = 'UpdateCase'
 var args = {
   'parameter': {
@@ -314,6 +322,7 @@ var args = {
 
 #### Create document
 ```javascript
+var clientService = 'documents'
 var clientMethod = 'CreateDocument'
 var args = {
   'parameter': {
