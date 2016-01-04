@@ -132,6 +132,7 @@ var args = {
 
 #### Search contact persons
 ```javascript
+var clientService = 'contacts'
 var clientMethod = 'GetContactPersons'
 var args = {
   'parameter': {
