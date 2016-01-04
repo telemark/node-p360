@@ -23,8 +23,8 @@ var config = {
         endpoint: 'UserService.svc'
       },
       files: {
-        url: 'UserService.svc?wsdl',
-        endpoint: 'UserService.svc'
+        url: 'FileService.svc?wsdl',
+        endpoint: 'FileService.svc'
       }
     },
     options: {
