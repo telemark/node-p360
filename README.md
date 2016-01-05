@@ -66,7 +66,11 @@ var config = require('./config')
 
 var clientService = 'contacts'
 var clientMethod = 'GetContactPersons'
-var args = { 'parameter': { 'Name': 'Geir' } }
+var args = {
+  'parameter': {
+     'Name': 'Geir'
+  }
+}
 
 var options = {
   'p360': config.p360,
@@ -334,25 +338,25 @@ var args = {
     'Category': '110', // Codetable: Document category
     'ResponsiblePersonRecno': '', // Recnr ansvarlig person
     'ResponsibleEnterpriseRecno': '213419', // Recnr ansvarlig virksomhet
-    'Contacts': {
-      0: {
+    'Contacts': [
+      {
         'ReferenceNumber': '14059733381', // Personnummer
         'Role': '5' // Mottaker
       }
-    },
+    ],
     'SendersReference': '',
     'AccessCode': '13', // Codetable: Accesscode
     'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
     'AccessGroup': 'Gruppenavn', // Codetable: Tilgangsgruppe navn
-    'Files': {
-      0: {
+    'Files': [
+      {
         'Title': 'Fil tittel',
         'Format': 'PDF', // Codetable: File format
         'Base64Data': data, // Must be base64 encoded
         'VersionFormat': 'A', // Codetable: File status
         'Category': '1' // Codetable: File category
       }
-    }
+    ]
   }
 }
 ```
