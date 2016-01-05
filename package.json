@@ -1,5 +1,5 @@
 {
-  "name": "node-p360",
+  "name": "p360",
   "version": "1.0.0",
   "description": "Communicates with p360 SIF",
   "license": "MIT",
@@ -44,10 +44,10 @@
     "soap": "^0.9.3"
   },
   "devDependencies": {
-    "coveralls": "^2.11.4",
+    "coveralls": "^2.11.6",
     "doctoc": "^0.15.0",
     "is-fn": "^1.0.0",
-    "standard": "^5.2.2",
-    "tap": "^1.4.1"
+    "standard": "^5.4.1",
+    "tap": "^5.0.0"
   }
 }
