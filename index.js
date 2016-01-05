@@ -8,6 +8,22 @@ function getDataFrom360 (options, callback) {
     return callback(new Error('Missing required input: options'), null)
   }
 
+  if (!options.p360) {
+    return callback(new Error('Missing required input: options.p360'), null)
+  }
+
+  if (!options.clientService) {
+    return callback(new Error('Missing required input: options.clientService'), null)
+  }
+
+  if (!options.clientMethod) {
+    return callback(new Error('Missing required input: options.clientMethod'), null)
+  }
+
+  if (!options.args) {
+    return callback(new Error('Missing required input: options.args'), null)
+  }
+
   if (!callback) {
     throw new Error('Missing required input: callback')
   }
