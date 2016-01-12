@@ -3,7 +3,7 @@
 var p360 = require('../index')
 var config = require('../config')
 
-var clientService = 'contacts'
+var clientService = 'ContactService'
 var clientMethod = 'SynchronizePrivatePerson'
 var args = {
   'parameter': {

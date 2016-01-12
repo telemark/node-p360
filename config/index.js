@@ -2,31 +2,9 @@
 
 var config = {
   p360: {
-    user: 'domain/username', // username
-    password: 'password', // passord
-    baseUrl: 'http://tfk-fh-siweb01.login.top.no:8088/SI.WS.Core/SIF/',
-    services: {
-      contacts: {
-        url: 'ContactService.svc?wsdl',
-        endpoint: 'ContactService.svc'
-      },
-      cases: {
-        url: 'CaseService.svc?wsdl',
-        endpoint: 'CaseService.svc'
-      },
-      documents: {
-        url: 'DocumentService.svc?wsdl',
-        endpoint: 'DocumentService.svc'
-      },
-      users: {
-        url: 'UserService.svc?wsdl',
-        endpoint: 'UserService.svc'
-      },
-      files: {
-        url: 'FileService.svc?wsdl',
-        endpoint: 'FileService.svc'
-      }
-    },
+    user: process.env.P360WS_USER || 'domain/username', // username
+    password: process.env.P360WS_PASSWORD || 'password', // passord
+    baseUrl: process.env.P360WS_BASEURL || 'http://tfk-fh-siweb01.login.top.no:8088/SI.WS.Core/SIF/',
     options: {
       ignoredNamespaces: true
     }

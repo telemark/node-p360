@@ -3,7 +3,7 @@
 var p360 = require('../index')
 var config = require('../config')
 
-var clientService = 'cases'
+var clientService = 'CaseService'
 var clientMethod = 'UpdateCase'
 var args = {
   'parameter': {
