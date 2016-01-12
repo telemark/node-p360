@@ -64,7 +64,7 @@ For a full list of calls and callbacks see the documentation  [here](https://git
 var p360 = require('node-p360')
 var config = require('./config')
 
-var clientService = 'contacts'
+var clientService = 'ContactService'
 var clientMethod = 'GetContactPersons'
 var args = {
   'parameter': {
@@ -93,16 +93,7 @@ p360(options, function (error, data) {
 ### Persons
 
 #### Search private persons
-```javascript
-var clientService = 'contacts'
-var clientMethod = 'GetPrivatePersons'
-var args = {
-  'parameter': {
-    'Name': 'Geir',
-    'PersonalIdNumber': '',
-    'Recno': ''
-  }
-}
+[See example for private persons](examples/getContactPersonsName.js)
 ```
 
 **Result:**
