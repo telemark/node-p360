@@ -3,7 +3,7 @@
 var p360 = require('../index')
 var config = require('../config')
 
-var clientService = 'DocumenServicet'
+var clientService = 'DocumentService'
 var clientMethod = 'CreateDocument'
 var data = 'base64'
 var args = {
