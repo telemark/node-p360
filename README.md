@@ -93,8 +93,8 @@ p360(options, function (error, data) {
 ### Persons
 
 #### Search private persons
-[See example for private persons](examples/getContactPersonsName.js)
-```
+[See example to search for private persons](examples/getPrivatePersonsName.js)
+
 
 **Result:**
 ```javascript
@@ -126,17 +126,7 @@ p360(options, function (error, data) {
 ```
 
 #### Search contact persons
-```javascript
-var clientService = 'contacts'
-var clientMethod = 'GetContactPersons'
-var args = {
-  'parameter': {
-    'Name': 'Geir',
-    'PersonalIdNumber': '',
-    'Recno': ''
-  }
-}
-```
+[See example to search for contact persons](examples/getContactPersonsName.js)
 
 **Result:**
 ```javascript
@@ -184,23 +174,7 @@ var args = {
 ```
 
 #### Create contact person
-```javascript
-var args = {
-  'parameter': {
-    'Enterprise': '1337', // Orgnr of company/department
-    'ExternalId': '26118645144', // Personnummer
-    'FirstName': 'Halvard',
-    'LastName': 'Fotfjes',
-    'Email': 'halvard.fotfjes@t-fk.no',
-    'PrivateAddress': {
-      'Country': 'NOR',
-      'StreetAddress': 'Lovestreet 42',
-      'ZipCode': '1337',
-      'ZipPlace': 'Telemark'
-    }
-  }
-}
-```
+[See example to create contact persons](examples/synchronizeContactPerson.js)
 
 **Result:**
 ```javascript
@@ -213,24 +187,7 @@ var args = {
 ```
 
 #### Create private person
-```javascript
-var clientService = 'contacts'
-var clientMethod = 'SynchronizePrivatePerson'
-var args = {
-  'parameter': {
-    'FirstName': 'Halvard',
-    'LastName': 'Fotfjes',
-    'PersonalIdNumber': '14059833392',
-    'Email': 'halvard.fotfjes@t-fk.no',
-    'PrivateAddress': {
-      'Country': 'NOR',
-      'StreetAddress': 'Lovestreet 42',
-      'ZipCode': '1337',
-      'ZipPlace': 'Telemark'
-    }
-  }
-}
-```
+[See example to create contact persons](examples/synchronizePrivatePerson.js)
 
 **Result:**
 ```javascript
@@ -245,112 +202,24 @@ var args = {
 ### Cases
 
 #### Search cases
-```javascript
-var clientService = 'cases'
-var clientMethod = 'GetCases'
-var args = {
-  'parameter': {
-    'CaseNumber': '',
-    'Title': 'Test',
-    'ContactReferenceNumber': '',
-    'ArchiveCode': ''
-  }
-}
-```
+[See example to search for cases](examples/getCasesTitle.js)
 
 **Result:**
 
 #### Create case
-```javascript
-var clientService = 'cases'
-var clientMethod = 'CreateCase'
-var args = {
-  'parameter': {
-    'Title': 'Sakstittel',
-    'UnofficialTitle': 'Uoffisiell sakstittel',
-    'Status': 'B', // Under behandling
-    'SubArchive': '200052', // Codetable: Noark subarchive
-    'AccessCode': '13', // Codetable: Accesscode
-    'AccessGroup': 'Gruppenavn', // Tilgangsgruppe navn
-    'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
-    'ArchiveCodes': [
-      {
-        'Sort': '1',
-        'ArchiveType': 'FAGKODE PRINSIPP', // Codetable: Noark classification
-        'ArchiveCode': 'N06' // Codetable: Noark classification code
-      },
-      {
-        'Sort': '2',
-        'ArchiveType': 'Fnr', // Codetable: Noark classification
-        'ArchiveCode': '14059733381',
-        'IsManualText': 'False'
-      }
-    ],
-    'Keywords': 'Stikkord',
-    'Contacts': [
-      {
-        'ReferenceNumber': '14059733381',
-        'Role': '9', // Codetable: Contact - Case Role
-      }
-    ],
-    'ResponsiblePersonIdNumber': '',
-    'ResponsibleEnterpriseRecno': '213419' // Recnr ansvarlig virksomhet
-  }
-}
-```
+[See example to create case](examples/createCase.js)
 
 **Result:**
 
 #### Update case
-```javascript
-var clientService = 'cases'
-var clientMethod = 'UpdateCase'
-var args = {
-  'parameter': {
-    'CaseNumber': '15/13742',
-    'Title': 'Ny sakstittel'
-  }
-}
-```
+[See example to update case](examples/updateCaseTitle.js)
 
 **Result:**
 
 ### Documents
 
-#### Create document
-```javascript
-var clientService = 'documents'
-var clientMethod = 'CreateDocument'
-var args = {
-  'parameter': {
-    'Title': 'Dokument tittel',
-    'Archive': '2', // Codetable: Document archive
-    'Status': '6', // Codetable: Document status
-    'Category': '110', // Codetable: Document category
-    'ResponsiblePersonRecno': '', // Recnr ansvarlig person
-    'ResponsibleEnterpriseRecno': '213419', // Recnr ansvarlig virksomhet
-    'Contacts': [
-      {
-        'ReferenceNumber': '14059733381', // Personnummer
-        'Role': '5' // Mottaker
-      }
-    ],
-    'SendersReference': '',
-    'AccessCode': '13', // Codetable: Accesscode
-    'Paragraph': 'Offl §13 jfr Fvl §13', // Codetable: Paragraph
-    'AccessGroup': 'Gruppenavn', // Codetable: Tilgangsgruppe navn
-    'Files': [
-      {
-        'Title': 'Fil tittel',
-        'Format': 'PDF', // Codetable: File format
-        'Base64Data': data, // Must be base64 encoded
-        'VersionFormat': 'A', // Codetable: File status
-        'Category': '1' // Codetable: File category
-      }
-    ]
-  }
-}
-```
+[See example to update case](examples/createDocument.js)
+
 **Result:**
 
 #### Update document
