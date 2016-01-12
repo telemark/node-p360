@@ -37,7 +37,7 @@ Node module for Public 360 from [Software Innovation](http://www.software-innova
 ### From npm
 
 ```sh
-$ npm install node-p360 --save
+$ npm install p360 --save
 ```
 
 ### From GitHub
