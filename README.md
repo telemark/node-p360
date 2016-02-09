@@ -61,7 +61,7 @@ For a full list of calls and callbacks see the documentation  [here](https://git
 ## Usage
 
 ```javascript
-var p360 = require('node-p360')
+var p360 = require('p360')
 var config = require('./config')
 
 var clientService = 'ContactService'
