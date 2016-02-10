@@ -1,6 +1,6 @@
 {
   "name": "p360",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Communicates with p360 SIF",
   "license": "MIT",
   "author": {
@@ -41,13 +41,13 @@
     "url": "http://github.com/telemark/node-p360/issues"
   },
   "dependencies": {
-    "soap": "^0.9.3"
+    "soap": "^0.9.3",
+    "is-fn": "^1.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
     "doctoc": "^0.15.0",
     "standard": "^5.4.1",
-    "tap": "^5.0.0",
-    "is-fn": "^1.0.0"
+    "tap": "^5.0.0"
   }
 }
