@@ -34,7 +34,7 @@ function getDataFrom360 (options, callback) {
   }
   var service = servicePath(options.clientService, options.p360.baseUrl)
 
-  soap.createClient(service.url, options.p360.options, function (error, client) {
+  soap.createClient(service.url, function (error, client) {
     if (error) {
       return callback(error, null)
     } else {
