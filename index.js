@@ -43,6 +43,8 @@ function getDataFrom360 (options, callback) {
       client[options.clientMethod](options.args, function (err, result) {
         if (err) {
           return callback(err, null)
+        } else if (result[service.resultTag] !== true) {
+          return callback(result)
         } else {
           return callback(null, result)
         }
