@@ -32,7 +32,7 @@ function getDataFrom360 (options, callback) {
   if (!isFn(callback)) {
     throw new Error('Callback must be a function')
   }
-  var service = servicePath(options.clientService, options.p360.baseUrl)
+  var service = servicePath(options)
 
   soap.createClient(service.url, function (error, client) {
     if (error) {
