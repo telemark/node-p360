@@ -44,6 +44,9 @@ function getDataFrom360 (options, callback) {
         if (err) {
           return callback(err, null)
         }
+        if (options.showRequest) {
+          console.log(client.lastRequest)
+        }
         if (result[service.resultTag].Successful !== true && result[service.resultTag].Successful !== 'true') {
           return callback(result)
         } else {

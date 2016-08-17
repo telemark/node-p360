@@ -73,6 +73,7 @@ var args = {
 }
 
 var options = {
+  'showRequest': true, // use this to console.log soap-request
   'p360': config.p360,
   'clientService': clientService,
   'clientMethod': clientMethod,
