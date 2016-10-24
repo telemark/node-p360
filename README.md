@@ -22,7 +22,6 @@
       - [Create case](#create-case)
       - [Update case](#update-case)
     - [Documents](#documents)
-      - [Create document](#create-document)
       - [Update document](#update-document)
       - [Get documents](#get-documents)
   - [Disclaimer](#disclaimer)
