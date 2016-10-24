@@ -45,9 +45,9 @@
     "is-fn": "^1.0.0"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
-    "doctoc": "^0.15.0",
-    "standard": "^5.4.1",
-    "tap": "^5.0.0"
+    "coveralls": "2.11.14",
+    "doctoc": "1.2.0",
+    "standard": "8.4.0",
+    "tap": "7.1.2"
   }
 }
