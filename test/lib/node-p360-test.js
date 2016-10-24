@@ -1,7 +1,7 @@
 'use strict'
 
 var tap = require('tap')
-var n360 = require('../index')
+var n360 = require('../../index')
 
 tap.test('It requires an options object to be supplied', function (test) {
   var options = false
