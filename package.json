@@ -41,8 +41,8 @@
     "url": "http://github.com/telemark/node-p360/issues"
   },
   "dependencies": {
-    "soap": "^0.9.3",
-    "is-fn": "^1.0.0"
+    "is-fn": "1.0.0",
+    "soap": "0.17.0"
   },
   "devDependencies": {
     "coveralls": "2.11.14",
