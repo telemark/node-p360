@@ -29,6 +29,8 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # node-p360
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/node-p360.svg)](https://greenkeeper.io/)
 Node module for Public 360 from [Software Innovation](http://www.software-innovation.com/)
 
 ## Installation
