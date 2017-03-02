@@ -48,7 +48,7 @@
     "coveralls": "2.11.16",
     "doctoc": "1.2.0",
     "nsp": "2.6.2",
-    "standard": "8.6.0",
+    "standard": "10.0.0-beta.0",
     "tap": "10.3.0"
   }
 }
