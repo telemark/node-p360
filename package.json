@@ -1,6 +1,6 @@
 {
   "name": "p360",
-  "version": "2.0.12",
+  "version": "2.1.0",
   "description": "Communicates with p360 SIF",
   "license": "MIT",
   "author": {
@@ -17,14 +17,15 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.1"
+    "node": ">=4.8.3"
   },
   "scripts": {
-    "setup": "npm install && node setup.js",
+    "setup": "npm install",
     "doctoc": "doctoc README.md --github",
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls"
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "Telemark fylkeskommune",
@@ -35,11 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/node-p360.git"
+    "url": "https://github.com/telemark/node-p360.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/node-p360/issues"
+    "url": "https://github.com/telemark/node-p360/issues"
   },
+  "homepage": "https://github.com/telemark/node-p360",
   "dependencies": {
     "is-fn": "1.0.0",
     "soap": "0.19.0"
@@ -48,7 +50,7 @@
     "coveralls": "2.13.1",
     "doctoc": "1.3.0",
     "nsp": "2.6.3",
-    "standard": "8.6.0",
+    "standard": "10.0.2",
     "tap": "10.3.2"
   }
 }
