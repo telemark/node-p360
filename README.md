@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/telemark/node-p360.svg?branch=master)](https://travis-ci.org/telemark/node-p360)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/node-p360.svg)](https://greenkeeper.io/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -30,27 +31,12 @@
 
 # node-p360
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/node-p360.svg)](https://greenkeeper.io/)
-Node module for Public 360 from [Software Innovation](http://www.software-innovation.com/)
+Node module for Public 360 from [Tieto](https://www.tieto.no/)
 
 ## Installation
 
-### From npm
-
-```sh
+```bash
 $ npm install p360 --save
-```
-
-### From GitHub
-
-```sh
-$ git clone git@github.com:telemark/node-p360.git
-```
-
-Then cd into directory and run the setup
-
-```sh
-$ npm run setup
 ```
 
 ## SIF documentation
@@ -61,19 +47,19 @@ For a full list of calls and callbacks see the documentation  [here](https://git
 
 ## Usage
 
-```javascript
-var p360 = require('p360')
-var config = require('./config')
+```JavaScript
+const p360 = require('p360')
+const config = require('./config')
 
-var clientService = 'ContactService'
-var clientMethod = 'GetContactPersons'
-var args = {
+const clientService = 'ContactService'
+const clientMethod = 'GetContactPersons'
+const args = {
   'parameter': {
      'Name': 'Geir'
   }
 }
 
-var options = {
+const options = {
   'showRequest': true, // use this to console.log soap-request
   'p360': config.p360,
   'clientService': clientService,
@@ -81,7 +67,7 @@ var options = {
   'args': args
 }
 
-p360(options, function (error, data) {
+p360(options, (error, data) => {
   if (error) {
     console.error(JSON.stringify(error))
   } else {
@@ -234,4 +220,9 @@ p360(options, function (error, data) {
 
 ## Disclaimer
 
-This is not an official module from Software Innovation
+This is not an official module from Tieto
+
+## License
+[MIT](LICENSE)
+
+![Robohash image of node-p360](https://robots.kebabstudios.party/node-p360.png "Robohash image of node-p360")
