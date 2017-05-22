@@ -3,48 +3,56 @@
 const test = require('ava')
 const n360 = require('../../index')
 
-test('It requires an options object to be supplied', t => {
+test('It requires an options object to be supplied', async t => {
   const options = false
   const expectedErrorMessage = 'Missing required input: options'
-  n360(options, (error, data) => {
+  try {
+    await n360(options)
+  } catch (error) {
     t.true(error.message.includes(expectedErrorMessage), expectedErrorMessage)
-  })
+  }
 })
 
-test('It requires options.p360 to exist', t => {
+test('It requires options.p360 to exist', async t => {
   const options = {
     p360: false
   }
   const expectedErrorMessage = 'Missing required input: options.p360'
-  n360(options, (error, data) => {
+  try {
+    await n360(options)
+  } catch (error) {
     t.true(error.message.includes(expectedErrorMessage), expectedErrorMessage)
-  })
+  }
 })
 
-test('It requires options.clientService to exist', t => {
+test('It requires options.clientService to exist', async t => {
   const options = {
     p360: true,
     clientService: false
   }
   const expectedErrorMessage = 'Missing required input: options.clientService'
-  n360(options, (error, data) => {
+  try {
+    await n360(options)
+  } catch (error) {
     t.true(error.message.includes(expectedErrorMessage), expectedErrorMessage)
-  })
+  }
 })
 
-test('It requires options.clientMethod to exist', t => {
+test('It requires options.clientMethod to exist', async t => {
   const options = {
     p360: true,
     clientService: true,
     clientMethod: false
   }
   const expectedErrorMessage = 'Missing required input: options.clientMethod'
-  n360(options, (error, data) => {
+  try {
+    await n360(options)
+  } catch (error) {
     t.true(error.message.includes(expectedErrorMessage), expectedErrorMessage)
-  })
+  }
 })
 
-test('It requires options.args to exist', t => {
+test('It requires options.args to exist', async t => {
   const options = {
     p360: true,
     clientService: true,
@@ -52,7 +60,9 @@ test('It requires options.args to exist', t => {
     args: false
   }
   const expectedErrorMessage = 'Missing required input: options.args'
-  n360(options, (error, data) => {
+  try {
+    await n360(options)
+  } catch (error) {
     t.true(error.message.includes(expectedErrorMessage), expectedErrorMessage)
-  })
+  }
 })

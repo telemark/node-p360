@@ -26,4 +26,3 @@ p360(options, function (error, data) {
     console.log(JSON.stringify(data, null, 4))
   }
 })
-
