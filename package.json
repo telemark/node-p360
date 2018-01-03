@@ -17,7 +17,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.10.0"
+    "node": ">=8.9.3"
   },
   "scripts": {
     "doctoc": "doctoc README.md --github",
@@ -36,12 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/node-p360.git"
+    "url": "git+https://github.com/telemark/node-p360.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/node-p360/issues"
   },
-  "homepage": "https://github.com/telemark/node-p360",
+  "homepage": "https://github.com/telemark/node-p360#readme",
   "dependencies": {
     "is-fn": "1.0.0",
     "soap": "0.23.0"
