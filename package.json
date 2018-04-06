@@ -44,7 +44,7 @@
   "homepage": "https://github.com/telemark/node-p360#readme",
   "dependencies": {
     "is-fn": "1.0.0",
-    "soap": "0.23.0"
+    "soap": "0.24.0"
   },
   "devDependencies": {
     "ava": "0.25.0",
