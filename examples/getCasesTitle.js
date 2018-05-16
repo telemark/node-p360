@@ -6,10 +6,10 @@ var clientService = 'CaseService'
 var clientMethod = 'GetCases'
 var args = {
   'parameter': {
-//  'CaseNumber': '',
+    //  'CaseNumber': '',
     'Title': 'Test'
-//  'ContactReferenceNumber': '',
-//  'ArchiveCode': ''
+    //  'ContactReferenceNumber': '',
+    //  'ArchiveCode': ''
   }
 }
 

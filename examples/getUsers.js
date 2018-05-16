@@ -8,7 +8,7 @@ var clientMethod = 'GetUsers'
 var args = {
   'parameter': {
     'UserId': 'login\\engj' // The ID that identifies the User (typically "domain\user").
-//  'ContactExternalId': 'test' // Search users associated with the given contact external id
+    //  'ContactExternalId': 'test' // Search users associated with the given contact external id
   }
 }
 

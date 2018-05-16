@@ -7,8 +7,8 @@ var clientMethod = 'GetPrivatePersons'
 var args = {
   'parameter': {
     'Name': 'Geir'
-//    'PersonalIdNumber': '',
-//    'Recno': ''
+    //    'PersonalIdNumber': '',
+    //    'Recno': ''
   }
 }
 

@@ -7,8 +7,8 @@ var clientMethod = 'GetEnterprises'
 var args = {
   'parameter': {
     'Name': 'Telemark'
-//    'PersonalIdNumber': '',
-//    'Recno': ''
+    //    'PersonalIdNumber': '',
+    //    'Recno': ''
   }
 }
 
