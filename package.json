@@ -48,7 +48,7 @@
     "soap": "0.25.0"
   },
   "devDependencies": {
-    "ava": "1.0.1",
+    "ava": "1.1.0",
     "coveralls": "3.0.2",
     "doctoc": "1.4.0",
     "nyc": "13.1.0",
