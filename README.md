@@ -222,6 +222,5 @@ p360(options, (error, data) => {
 This is not an official module from Tieto
 
 ## License
-[MIT](LICENSE)
 
-![Robohash image of node-p360](https://robots.kebabstudios.party/node-p360.png "Robohash image of node-p360")
+[MIT](LICENSE)
