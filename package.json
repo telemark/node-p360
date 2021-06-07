@@ -50,7 +50,7 @@
   "devDependencies": {
     "ava": "3.15.0",
     "coveralls": "3.1.0",
-    "doctoc": "2.0.0",
+    "doctoc": "2.0.1",
     "nyc": "15.1.0",
     "standard": "16.0.3"
   }
